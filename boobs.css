@@ -1,0 +1,159 @@
+/* change the font family */
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background: #f1f1f1;
+}
+/* give it a section padding */
+.section-padding{
+    padding: 100px 0;
+}
+/* style each of text and caption in the caurosel */
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+    
+}
+
+
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size :18px;
+    line-height: 1.9;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1; 
+}
+/* style the nav bar */
+.navbar-nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+/* change the second logo color  */
+.navbar-light .navbar-brand{
+    color: aqua;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+/*  then hover it, change the hover color */
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+    color: brown;
+}
+.navbar-light .navbar-nav .navbar-link{
+    color: rgb(255, 0, 98);
+}
+/* width of the banner for responsive */
+.w-100{
+    height: 100vh;
+}
+
+/* after youre done with the service come back here to style it */
+
+.services .card-body i{
+    font-size: 50px; 
+
+}
+/* style d team icon */
+.team .card-body i{
+    font-size: 20px; 
+
+}
+.portfolio .card{
+    box-shadow: 15px 15px 40px rgba(149, 7, 7, 0.15);
+}
+.team .card{
+    box-shadow: 15px 15px 50px black;
+}
+
+/* experiment */
+.about-text{
+    width: 90%;
+    
+}
+
+/* .about-img img{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* background: rgba(0, 0, 0, 0.7); */
+    /* z-index: 1;  */
+/* } */
+
+
+/* **responsive design css */
+
+@media only screen and (min-width : 768px) and (max-width 991px){
+    .carousel-caption{
+        bottom: 370px;
+
+    }
+    .carousel-caption p{
+        width: 100%;
+    }
+    /* after implementing the footer */
+    .card{
+        margin-bottom: 30px;
+    }
+    .img-area img{
+        width: 100%;
+    }
+    
+}
+/* max width 991(1024) and min 768 style so the wrap wont cover the slider text */
+@media only screen and (max-width : 767px){
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 125px;
+    }
+    .carousel-caption h5{
+    
+        font-size: 17px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+    }
+    /* GO TO THE HTML PAGE AND REMOVE  D NONE D-MD-BLOCK */
+    /* THEN COOME BACK KAND STYLE CAROUSEL */
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;
+
+    }
+    /* after impleting footer */
+    .about-text{
+        padding-top: 60px;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+}
